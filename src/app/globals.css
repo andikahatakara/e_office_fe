@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input {
+        @apply p-2.5 text-sm w-full rounded-lg block
+    }
+    .input-default {
+        @apply bg-gray-50 border text-gray-900 border-gray-300 dark:bg-gray-700  focus:ring-primary-500 focus:border-primary-500 dark:placeholder:text-gray-400 dark:border-gray-600 dark:text-gray-50 dark:focus:ring-primary-500 dark:focus:border-primary-500
+    }
+    .input-error {
+        @apply bg-red-50 border border-red-300 text-red-900 dark:border-red-600 focus:ring-red-500 focus:border-red-500 placeholder:text-red-400 dark:bg-red-700 dark:text-red-50 dark:placeholder:text-red-400 dark:focus:ring-red-500 dark:focus:border-red-500
+    }
+    .input-success {
+        @apply bg-success-50 border border-success-300 text-success-900 dark:border-success-600 focus:ring-success-500 focus:border-success-500 dark:bg-success-700 dark:text-success-50 dark:placeholder:text-success-400 dark:focus:ring-success-500 dark:focus:border-success-500
+    }
+    .input-disabled {
+        @apply bg-gray-100 border border-gray-300 cursor-not-allowed text-gray-900 dark:text-gray-400 dark:border-gray-600 focus:ring-gray-500 focus:border-gray-500 dark:bg-gray-700  dark:placeholder:text-gray-400 dark:focus:ring-gray-500 dark:focus:border-gray-500
+    }
+    .input-error-message {
+        @apply text-xs text-red-700 font-normal dark:text-red-500
+    }
+		.input-file {
+			@apply cursor-pointer file:hover:cursor-pointer file:bg-gray-800 p-0 file:text-gray-50 file:p-2.5 file:rounded-l-lg file:border-0 file:dark:bg-gray-600
+		}
+
+    .btn {
+        @apply text-white font-medium rounded-lg text-sm px-5 py-2.5
+    }
+    .btn-icon {
+        @apply text-white font-medium rounded-lg p-2.5
+    }
+
+		.loader {
+			@apply h-12 w-12 grid border-8 rounded-full border-primary-50 border-r-primary-700 animate-spin
+		}
+
+		.input-icon {
+			@apply text-gray-950 h-4 w-4 dark:text-gray-50
+		}
+
+		.alert {
+			@apply inline-flex items-center rounded-lg w-full px-4 py-3 leading-normal text-sm md:text-base space-x-3
+		}
+
+		.icon5 {
+			@apply h-5 w-5 text-inherit
+		}
+
+		.menu {
+			@apply flex items-center p-2 space-x-3 rounded-lg
+		}
+		.menu-default {
+			@apply text-gray-900  dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700
+		}
+		.menu-active {
+			@apply bg-primary-700 hover:bg-primary-800 text-white dark:bg-primary-600 hover:bg-primary-700
+		}
+}

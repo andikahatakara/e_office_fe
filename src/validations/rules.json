@@ -1,0 +1,8 @@
+{
+	"required": "Input wajib diisi",
+	"email": "Input harus berupa email",
+	"integer": "Input harus berupa angka integer",
+	"number": "Input harus berupa angka",
+	"positive": "Input harus berupa angka positif",
+	"match": "Input harus sama dengan"
+}
